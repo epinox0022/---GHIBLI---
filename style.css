@@ -8,6 +8,7 @@ body {
     padding-top: 100vh;
     min-height: 200vh;
     font-family: 'Poppins', sans-serif;
+    background-color: #F4FDFF;
 }
 
 .head {
@@ -23,13 +24,14 @@ body {
     color: #042c1d;
 
 
+
     animation: scroll .6s linear forwards;
     animation-timeline: scroll();
     animation-range: 0vh 90vh;
 }
 
 .class:last-child {
-    margin-bottom: 10rem;
+    margin-bottom: 7rem;
 }
 
 .parag-1,
@@ -65,6 +67,7 @@ body {
 .parag-1 span {
     font-size: 22px;
     text-transform: capitalize;
+    font-weight: 500;
 }
 
 .parag-1 img {
@@ -79,7 +82,7 @@ body {
     line-height: 1.5rem;
 
 
-    animation: image linear both;
+    animation: image 5s linear both;
     animation-timeline: view(block);
     animation-range: cover 10 cover 100%;
 }
@@ -96,12 +99,70 @@ body {
 .parag-2 span {
     font-size: 22px;
     text-transform: capitalize;
+    font-weight: 500;
 }
 
 .parag-2 img {
     width: 30%;
     height: 30%;
+    box-shadow: 7px 7px 17px gray;
 }
+
+
+.iconClick {
+    background: url(image/account_circle_24dp_042C1D_FILL0_wght400_GRAD0_opsz24.png);
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    bottom: 1%;
+    left: 1%;
+    width: 3%;
+    height: 6%;
+}
+
+.iconMenu {
+    width: 13%;
+    height: 6.5%;
+    background-color: #F4FDFF;
+    border: 4px solid #042c1d;
+    position: fixed;
+    bottom: 1%;
+    left: 5%;
+    border-radius: 20px;
+    text-align: center;
+    transition: width .6s;
+
+}
+
+.iconMenu::after {
+    position: relative;
+}
+
+.iconMenu img {
+    margin: 0 10px;
+}
+
+.iconMenu.menu {
+    display: none;
+}
+
+.modalInfo {
+    position: absolute;
+    background-color: rebeccapurple;
+    bottom: 5rem;
+    right: 3rem;
+    width: 12rem;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 @keyframes scroll {
@@ -134,11 +195,15 @@ body {
     }
 
     40% {
-        opacity: 2;
+        opacity: 1;
     }
 
     50% {
         opacity: 1;
+    }
+
+    55% {
+        opacity: 0;
     }
 
     60% {
