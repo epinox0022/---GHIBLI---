@@ -31,9 +31,10 @@ body {
     animation-range: 0vh 90vh;
 }
 
-.head span {
+/* .head span {
     color: #F4FDFF;
-}
+    animation: scroll .6s linear forwards;
+} */
 
 .class:last-child {
     margin-bottom: 4rem;
@@ -284,7 +285,7 @@ footer {
         height: 15vh;
         font-size: calc(2vw + 1em);
         position: fixed;
-
+        color: #042c1d;
     }
 }
 
