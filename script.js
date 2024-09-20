@@ -23,6 +23,7 @@ const endColor = {
 };
 
 const maxScrollValue = 400;
+console.log(maxScrollValue);
 
 const updateTextColor = () => {
   const scrollPosition = Math.min(window.scrollY, maxScrollValue);
@@ -40,9 +41,7 @@ const updateTextColor = () => {
       (endColor.b - startColor.b) * (scrollPosition / maxScrollValue)
   );
 
-  // Set the new color based on the scroll position
   textElement.style.color = `rgb(${red}, ${green}, ${blue})`;
 };
 
-// Add scroll event listener to trigger the color change
 window.addEventListener("scroll", updateTextColor);
