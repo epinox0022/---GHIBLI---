@@ -1,19 +1,9 @@
 "use strict";
 
-const hideMenu = document.querySelector(".iconMenu");
-const openMenu = document.querySelector(".iconClick");
+function rover() {
+  document.getElementById("headered").classList.add("hover");
+}
 
-const openInfo = document.querySelector(".modalInfo");
-const clickInfo = document.querySelector(".iconClik");
-
-openMenu.onclick = () => {
-  hideMenu.classList.toggle("menu");
-
-  if (hideMenu.classList.contains("menu")) {
-    openInfo.classList.add("openInfo");
-  }
-};
-
-clickInfo.onclick = () => {
-  openInfo.classList.toggle("openInfo");
-};
+function closerover() {
+  document.getElementById("headered").classList.remove("hover");
+}
