@@ -45,4 +45,12 @@ const updateTextColor = () => {
 };
 
 window.addEventListener("scroll", updateTextColor);
-  
+
+// CARD FLIPPED AREA
+
+const card = document.getElementById("flipCard");
+const flipButton = document.getElementById("flipButton");
+
+flipButton.addEventListener("click", function () {
+  card.classList.toggle("flipped");
+});
