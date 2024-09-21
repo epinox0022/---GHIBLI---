@@ -45,3 +45,4 @@ const updateTextColor = () => {
 };
 
 window.addEventListener("scroll", updateTextColor);
+  
