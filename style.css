@@ -272,6 +272,11 @@ footer {
     /* transform-origin: left; */
 }
 
+.devs.hover::after {
+    transform: scale(1);
+    /* transform-origin: left; */
+}
+
 @keyframes scroll {
     from {
         background-position: 50% 0;

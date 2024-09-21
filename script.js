@@ -8,6 +8,37 @@ function closerover() {
   document.getElementById("headered").classList.remove("hover");
 }
 
+function over1() {
+  document.getElementById("header1").classList.add("hover");
+}
+
+function closeover1() {
+  document.getElementById("header1").classList.remove("hover");
+}
+
+function over2() {
+  document.getElementById("header2").classList.add("hover");
+}
+
+function closeover2() {
+  document.getElementById("header2").classList.remove("hover");
+}
+
+function over3() {
+  document.getElementById("header3").classList.add("hover");
+}
+
+function closeover3() {
+  document.getElementById("header3").classList.remove("hover");
+}
+
+//
+//
+//
+//
+//
+// Single Colored Letter Change on Scoll
+
 const textElement = document.getElementById("text");
 
 const startColor = {
@@ -46,11 +77,15 @@ const updateTextColor = () => {
 
 window.addEventListener("scroll", updateTextColor);
 
+//
+//
+//
+//
+//
 // CARD FLIPPED AREA
 
-const card = document.getElementById("flipCard");
-const flipButton = document.getElementById("flipButton");
+// const card = document.getElementById("flipCard");
 
-flipButton.addEventListener("click", function () {
-  card.classList.toggle("flipped");
-});
+// card.addEventListener("click", () => {
+//   card.classList.toggle("flipped");
+// });
